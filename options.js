@@ -3,7 +3,7 @@
 
 */
 
-// Saves options to chrome.storage
+// Saves options to browser.storage
 function save_options() {
     var theme = $('#theme').val();
     var img = $('#img').val();
@@ -11,7 +11,7 @@ function save_options() {
     var colorte = $('#colorte').val();
     var colortb = $('#colortb').val();
     var colortt = $('#colortt').val();
-    chrome.storage.sync.set({
+    browser.storage.sync.set({
         theme: theme,
         img: img,
         colorbg: colorbg,
@@ -19,8 +19,8 @@ function save_options() {
         colortb: colortb,
         colortt: colortt,
     }, function () {
-        chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
-            chrome.tabs.update(tabs[0].id, { url: tabs[0].url });
+        browser.tabs.query({ active: true, currentWindow: true }, function (tabs) {
+            browser.tabs.update(tabs[0].id, { url: tabs[0].url });
         });
     });
 }
@@ -35,9 +35,9 @@ function theme_change(e) {
 }
 
 // Restores select box and checkbox state using the preferences
-// stored in chrome.storage.
+// stored in browser.storage.
 function restore_options() {
-    chrome.storage.sync.get({
+    browser.storage.sync.get({
         theme: 'light',
         img: '',
         colorbg: '#FFFFFF',

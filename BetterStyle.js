@@ -33,7 +33,7 @@ function setStyle(colorbg = '#292929', colorte = '#ffffff', colortb = '#333333',
     document.head.appendChild(style);
 }
 
-chrome.storage.sync.get({
+browser.storage.sync.get({
     theme: 'light',
     colorbg: '#FFFFFF',
     colorte: '#262626',

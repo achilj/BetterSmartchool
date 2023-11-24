@@ -19,7 +19,7 @@ function setImg(imgURL) {
     block.appendChild(img);
 }
 
-chrome.storage.sync.get(
+browser.storage.sync.get(
     {
         img: '',
     }, function (items) {
