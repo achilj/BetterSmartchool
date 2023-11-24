@@ -1,49 +1,52 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-  <title>Smarter Smartschool Options</title>
+<html><head>
+  <title>My Test Extension Options</title>
   <link rel="stylesheet" href="static/css/bootstrap.min.css">
   <link rel="stylesheet" href="static/css/jquery.minicolors.css">
 </head>
 
 <body class="m-5" style="width: 700px;">
   <form>
-    <div class="form-group">
-      <label for="theme">Theme:</label>
-      <select id="theme" class="form-control">
-        <option value="light">Light</option>
-        <option value="dark">Dark</option>
-        <option value="custom">Custom</option>
-      </select>
-    </div>
+      <div class="form-group">
+          <label for="theme">Theme:</label>
+          <select id="theme" class="form-control">
+              <option value="light">Light</option>
+              <option value="dark">Dark</option>
+              <option value="custom">Custom</option>
+          </select>
+      </div>
 
-    <div id="colors" class="form-group" style="display: none">
-      <div class="form-group form-inline">
-        <label for="colorbg" stule="mr-2">Background:</label>
-        <input id="colorbg" type="text" value="#FFFFFF" class="form-control color" />
+      <div id="colors" class="form-group" style="display: none">
+          <div class="form-group form-inline">
+              <label for="colorbg" stule="mr-2">Background:</label>
+              <div class="minicolors minicolors-theme-bootstrap minicolors-position-bottom"><input id="colorbg" type="text" value="#ffffff" class="form-control color minicolors-input" size="7"><span class="minicolors-swatch minicolors-sprite minicolors-input-swatch"><span class="minicolors-swatch-color" style="background-color: rgb(255, 255, 255);"></span></span><div class="minicolors-panel minicolors-slider-hue"><div class="minicolors-slider minicolors-sprite"><div class="minicolors-picker" style="top: 0px;"></div></div><div class="minicolors-opacity-slider minicolors-sprite"><div class="minicolors-picker"></div></div><div class="minicolors-grid minicolors-sprite" style="background-color: rgb(255, 0, 0);"><div class="minicolors-grid-inner"></div><div class="minicolors-picker" style="top: 0px; left: 0px;"><div></div></div></div></div></div>
+          </div>
+          <div class="form-group form-inline">
+              <label for="colorte" stule="mr-2">Text:</label>
+              <div class="minicolors minicolors-theme-bootstrap minicolors-position-bottom"><input id="colorte" type="text" value="#262626" class="form-control color minicolors-input" size="7"><span class="minicolors-swatch minicolors-sprite minicolors-input-swatch"><span class="minicolors-swatch-color" style="background-color: rgb(38, 38, 38);"></span></span><div class="minicolors-panel minicolors-slider-hue"><div class="minicolors-slider minicolors-sprite"><div class="minicolors-picker" style="top: 0px;"></div></div><div class="minicolors-opacity-slider minicolors-sprite"><div class="minicolors-picker"></div></div><div class="minicolors-grid minicolors-sprite" style="background-color: rgb(255, 0, 0);"><div class="minicolors-grid-inner"></div><div class="minicolors-picker" style="top: 127px; left: 0px;"><div></div></div></div></div></div>
+          </div>
+          <div class="form-group form-inline">
+              <label for="colortb" stule="mr-2">Topbar:</label>
+              <div class="minicolors minicolors-theme-bootstrap minicolors-position-bottom"><input id="colortb" type="text" value="#ff520e" class="form-control color minicolors-input" size="7"><span class="minicolors-swatch minicolors-sprite minicolors-input-swatch"><span class="minicolors-swatch-color" style="background-color: rgb(255, 82, 14);"></span></span><div class="minicolors-panel minicolors-slider-hue"><div class="minicolors-slider minicolors-sprite"><div class="minicolors-picker" style="top: 142.946px;"></div></div><div class="minicolors-opacity-slider minicolors-sprite"><div class="minicolors-picker"></div></div><div class="minicolors-grid minicolors-sprite" style="background-color: rgb(255, 72, 0);"><div class="minicolors-grid-inner"></div><div class="minicolors-picker" style="top: 0px; left: 142px;"><div></div></div></div></div></div>
+          </div><div class="form-group form-inline">
+              <label for="colortt" stule="mr-2">Topbar text:</label>
+              <div class="minicolors minicolors-theme-bootstrap minicolors-position-bottom"><input id="colortt" type="text" value="#ffffff" class="form-control color minicolors-input" size="7"><span class="minicolors-swatch minicolors-sprite minicolors-input-swatch"><span class="minicolors-swatch-color" style="background-color: rgb(255, 255, 255);"></span></span><div class="minicolors-panel minicolors-slider-hue"><div class="minicolors-slider minicolors-sprite"><div class="minicolors-picker" style="top: 0px;"></div></div><div class="minicolors-opacity-slider minicolors-sprite"><div class="minicolors-picker"></div></div><div class="minicolors-grid minicolors-sprite" style="background-color: rgb(255, 0, 0);"><div class="minicolors-grid-inner"></div><div class="minicolors-picker" style="top: 0px; left: 0px;"><div></div></div></div></div></div>
+          </div>
       </div>
-      <div class="form-group form-inline">
-        <label for="colorte" stule="mr-2">Text:</label>
-        <input id="colorte" type="text" value="#262626" class="form-control color" />
-      </div>
-      <div class="form-group form-inline">
-        <label for="colortb" stule="mr-2">Topbar:</label>
-        <input id="colortb" type="text" value="#FF520E" class="form-control color" />
-      </div>
-      <div class="form-group form-inline">
-        <label for="colortt" stule="mr-2">Topbar text:</label>
-        <input id="colortt" type="text" value="#FFFFFF" class="form-control color" />
-      </div>
-    </div>
 
-    <button id="save" class="btn btn-primary">Save</button>
+      <div class="form-group">
+          <label for="img">Images:</label>
+          <textarea id="img" class="form-control" rows="3" wrap="soft" style="white-space: pre;overflow-wrap: normal;overflow-x: scroll;"></textarea>
+          <small class="form-text text-muted">Put an image on every line</small>
+      </div>
+
+
+      <button id="save" class="btn btn-primary">Save</button>
 
   </form>
   <script src="static/js/jquery-3.4.1.min.js"></script>
   <script src="static/js/bootstrap.bundle.min.js"></script>
   <script src="static/js/jquery.minicolors.min.js"></script>
   <script src="options.js"></script>
-</body>
 
-</html>
+
+</body></html>

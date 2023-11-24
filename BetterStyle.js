@@ -1,9 +1,13 @@
-function setStyle(colorbg, colorte, colortb, colortt) {
-    // ToDo: fix this, this is horible
-    let style = document.createElement('style');
+/*
+    Achilj
+    
+*/
+
+function setStyle(colorbg = '#292929', colorte = '#ffffff', colortb = '#333333', colortt = '#ffffff') {
+    var style = document.createElement('style');
     style.innerHTML = `
 
-    body, input, select, textarea, h1, h2, h3, h4, h5, h6, .smsc-title--1, .course__block, .news__feed__button__content, .topnav__menu, .topnav__menuitem, .toolbar, .folders, .helper--height--mega, .modern-message, .smscMainBlockContainer, .nodata_msg, .eval_content, .smscToolbar, .course, .smscleftnavcontainer, .smsc-column-nav__button, .notification__btn, #smscMainBlockContainer, .smscAdminNav_body_linkdivText, .smscAdminNav_body_linkdivTitle, .smsc-container, .smsc-tree__item__title, #smscFrameTitlePanel, .postbox_link, .toaster__toast, .full_pie_icon, .eval_title, .eval_comment, .notifs-toaster__toast, .notification, #smscMain, .smscComposeMessage, #msg_bg, .msg_button, .tabmain, .templateselectdiv, .templateName, .templateRow, .login-app__linkbutton, .login-app__infoblock--margin-bottom, .login-app__infoblock--title, .login-app__infoblock, .searchDivResult, #modal-content, .side-panel__panel {
+    body, input, select, textarea, h1, h2, h3, h4, h5, h6, .smsc-title--1, .course__block, .news__feed__button__content, .topnav__menu, .topnav__menuitem, .toolbar, .folders, .helper--height--mega, .modern-message, .smscMainBlockContainer, .nodata_msg, .eval_content, .smscToolbar, .course, .smscleftnavcontainer, .smsc-column-nav__button, .notification__btn, #smscMainBlockContainer, .smscAdminNav_body_linkdivText, .smscAdminNav_body_linkdivTitle, .smsc-container, .smsc-tree__item__title, #smscFrameTitlePanel, .postbox_link, .toaster__toast, .full_pie_icon, .eval_title, .eval_comment, .notifs-toaster__toast, .notification, #smscMain, .smscComposeMessage, #msg_bg, .msg_button, .tabmain, .templateselectdiv, .templateName, .templateRow, .login-app__linkbutton, .login-app__infoblock--margin-bottom, .login-app__infoblock--title, .login-app__infoblock, .searchDivResult {
         color: ` + colorte + ` !important;
         background-color: ` + colorbg + ` !important;
     }
@@ -37,7 +41,7 @@ chrome.storage.sync.get({
     colortt: '#FFFFFF',
 }, function (items) {
     if (items.theme == 'dark') {
-        setStyle('#292929', '#ffffff', '#333333', '#ffffff');
+        setStyle();
     }
     else if (items.theme == 'custom') {
         setStyle(items.colorbg, items.colorte, items.colortb, items.colortt);

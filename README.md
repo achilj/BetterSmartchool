@@ -1,5 +1,3 @@
-# ![Logo](static/img/icon_48.png) Smarter Smartschool 
+# ![Logo](static/img/icon_48.png) Better Smartschool 
 
-Adds a point total to Smartschool.
-
-### [Download for Chrome here](https://chrome.google.com/webstore/detail/smarter-smartschool/lbpdknjafmmnemenflppkofaakldbfom)
+Adds a point total and redesigned style system to Smartschool (Belgium).

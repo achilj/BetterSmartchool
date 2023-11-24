@@ -1,12 +1,19 @@
+/*
+    Achilj
+
+*/
+
 // Saves options to chrome.storage
 function save_options() {
-    let theme = $('#theme').val();
-    let colorbg = $('#colorbg').val();
-    let colorte = $('#colorte').val();
-    let colortb = $('#colortb').val();
-    let colortt = $('#colortt').val();
+    var theme = $('#theme').val();
+    var img = $('#img').val();
+    var colorbg = $('#colorbg').val();
+    var colorte = $('#colorte').val();
+    var colortb = $('#colortb').val();
+    var colortt = $('#colortt').val();
     chrome.storage.sync.set({
         theme: theme,
+        img: img,
         colorbg: colorbg,
         colorte: colorte,
         colortb: colortb,
@@ -19,7 +26,7 @@ function save_options() {
 }
 
 function theme_change(e) {
-    let theme = $('#theme').val();
+    var theme = $('#theme').val();
     if (theme == 'custom') {
         $('#colors').show();
     } else {
@@ -27,15 +34,19 @@ function theme_change(e) {
     }
 }
 
+// Restores select box and checkbox state using the preferences
+// stored in chrome.storage.
 function restore_options() {
     chrome.storage.sync.get({
         theme: 'light',
+        img: '',
         colorbg: '#FFFFFF',
         colorte: '#262626',
         colortb: '#FF520E',
         colortt: '#FFFFFF',
     }, function (items) {
             $('#theme').val(items.theme);
+            $('#img').val(items.img);
             $('#colorbg').attr('value', items.colorbg);
             $('#colorte').attr('value', items.colorte);
             $('#colortb').attr('value', items.colortb);
