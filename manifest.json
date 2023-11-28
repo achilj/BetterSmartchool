@@ -5,8 +5,7 @@
   "description": "Makes Smartschool way better!",
   "permissions": [
     "activeTab",
-    "storage",
-    "declarativeContent"
+    "storage"
   ],
   "background": {
     "scripts": ["background.js"]
