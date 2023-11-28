@@ -1,7 +1,7 @@
 {
   "name": "Better Smartschool",
   "short_name": "BetterSS",
-  "version": "1.0",
+  "version": "1.1",
   "description": "Makes Smartschool way better!",
   "permissions": [
     "storage",
@@ -82,5 +82,8 @@
        ]
      }
   ],
+  "update_url": "https://achil.be/smartschool/update.json",
+  "version_name": "1.1",
+  "update_info_url": "https://achil.be/smartschool/update_info.json",
   "manifest_version": 3
  }
