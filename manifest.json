@@ -1,7 +1,7 @@
 {
   "name": "Better Smartschool",
   "short_name": "BetterSS",
-  "version": "1.2",
+  "version": "1.0",
   "description": "Makes Smartschool way better!",
   "permissions": [
     "activeTab",
@@ -25,7 +25,7 @@
   },
   "browser_specific_settings": {
     "gecko": {
-      "id": "{0d29743f-7717-45b3-918a-83ed3b5c4372}"
+      "id": "bettersmartschool@achilcraft"
     }
   },
   "content_scripts": [
